@@ -1,3 +1,51 @@
-.DefaultPage{
-  
+@import '@/assets/stylesheets/all.scss';
+
+.DefaultPage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .trim {
+    width: 100%;
+    height: 20px;
+
+    background-color: $primary;
+  }
+  .trim-top {
+    position: absolute;
+    top: 0;
+  }
+  .trim-down {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .content {
+    height: calc(100% - 40px);
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+
+    > * {
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      height: 100%;
+    }
+    .left-side {
+      left: 0px;
+      width: 70%;
+      padding: 20px;
+
+      background-color: aliceblue;
+    }
+    .right-side {
+      right: 0px;
+      width: 30%;
+      padding: 20px;
+
+      background-color: rgb(221, 237, 243);
+    }
+  }
 }

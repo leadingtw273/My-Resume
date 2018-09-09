@@ -1,6 +1,15 @@
 <script>
+import DetailList from '../../components/DetailList';
+import DetailTitle from '../../components/DetailTitle';
+import DetailText from '../../components/DetailText';
+
 export default {
-  name: 'DefaultPage'
+  name: 'DefaultPage',
+  components: {
+    DetailTitle,
+    DetailList,
+    DetailText
+  }
 };
 </script>
 
