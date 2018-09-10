@@ -1,6 +1,6 @@
 @import '@/assets/stylesheets/all.scss';
 
-.DetailList {
+.DetailProgressBar {
   width: 200px;
   margin-top: 20px;
   line-height: 24px;
@@ -16,7 +16,6 @@
   .field {
     display: flex;
     font-size: 12px;
-    line-height: 20px;
     width: 100%;
     border-bottom: 1px dashed $primary;
 
@@ -24,10 +23,12 @@
       display: flex;
     }
     .left-data {
+      justify-content: flex-start;
       width: 40%;
       font-weight: bold;
     }
     .right-data {
+      justify-content: flex-end;
       width: 60%;
     }
   }

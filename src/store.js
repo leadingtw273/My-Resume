@@ -37,16 +37,8 @@ export default new Vuex.Store({
         title: 'Education',
         type: 'List',
         content: {
-          SecondarySchool: {
-            Name: '高雄高級工業職業學校',
-            department: '電子科',
-            date: '2012/09~2015/06(畢業)'
-          },
-          University: {
-            Name: '樹德科技大學',
-            department: '電腦與通訊系',
-            date: '2015/09~2019/06(在學)'
-          }
+          Secondary: '高雄高工 (電子科)',
+          University: '樹德科技大學 \n (電腦與通訊系)'
         }
       },
       {
@@ -55,20 +47,28 @@ export default new Vuex.Store({
         type: 'ProgressBarList',
         content: [
           {
-            Name: 'JavaScript (es5,es6,es7)',
-            Proficiency: 60
+            Name: 'JavaScript',
+            Proficiency: 100
           },
           {
-            Name: 'Vue (Vuex, VueRouter, Vue-cli)',
-            Proficiency: 80
+            Name: 'Vue',
+            Proficiency: 90
           },
           {
             Name: 'Nodejs',
-            Proficiency: 60
+            Proficiency: 80
           },
           {
             Name: 'Express',
             Proficiency: 70
+          },
+          {
+            Name: 'HTML',
+            Proficiency: 65
+          },
+          {
+            Name: 'CSS',
+            Proficiency: 65
           }
         ]
       },
@@ -103,7 +103,8 @@ export default new Vuex.Store({
         index: 6,
         title: 'AboutMe',
         type: 'text',
-        content: ''
+        content:
+          '您好~ 我是周昱宏 我只是在測試換行 所以你可以不用看這一段 因為這只是費文罷了 你如果看到最後 那只能說 恭喜你浪費時間看這一段了'
       }
     ]
   },

@@ -1,0 +1,26 @@
+@import '@/assets/stylesheets/all.scss';
+
+.DetailInfoTitle {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  .main {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 40px;
+    color: $sub;
+  }
+
+  .sub {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 26px;
+    color: $sub;
+  }
+}

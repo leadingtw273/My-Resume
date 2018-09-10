@@ -1,3 +1,22 @@
-.DetailText{
-  
+@import '@/assets/stylesheets/all.scss';
+
+.DetailText {
+  width: 200px;
+  margin-top: 20px;
+  line-height: 22px;
+
+  .title {
+    color: $primary;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px dashed $primary;
+  }
+
+  .text {
+    margin-top: 8px;
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 12px;
+  }
 }

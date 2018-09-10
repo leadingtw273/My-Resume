@@ -1,6 +1,17 @@
 <script>
 export default {
-  name: 'DetailText'
+  name: 'DetailText',
+  data() {
+    return {
+      title: null,
+      text: null
+    };
+  },
+  props: ['detailData'],
+  created() {
+    this.title = this.detailData.title;
+    this.text = this.detailData.content;
+  }
 };
 </script>
 

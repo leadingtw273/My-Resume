@@ -1,16 +1,21 @@
 <script>
+import vueProgressBar from 'svg-progress-bar';
+
 export default {
-  name: 'DetailList',
+  name: 'DetailProgressBar',
   data() {
     return {
       title: null,
-      field: null
+      data: null
     };
   },
   props: ['detailData'],
+  components: {
+    vueProgressBar
+  },
   created() {
     this.title = this.detailData.title;
-    this.field = Object.entries(this.detailData.content);
+    this.data = this.detailData.content;
   }
 };
 </script>

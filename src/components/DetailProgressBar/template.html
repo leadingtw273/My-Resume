@@ -1,0 +1,11 @@
+<div class="DetailProgressBar">
+  <p class="title">{{title}}</p>
+  <ol>
+    <ul v-for="item in data">
+      <div class="field">
+        <p class="left-data">{{item.Name}}</p>
+        <vue-progress-bar class="right-data" v-bind:value="item.Proficiency" type="rect" :options="{pathColors:['rgb(221, 237, 243)','rgb(68, 109, 148)'] , text: null, rectHeight:8, rectWidth:100}"></vue-progress-bar>
+      </div>
+    </ul>
+  </ol>
+</div>
