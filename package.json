@@ -10,7 +10,7 @@
   "dependencies": {
     "svg-progress-bar": "^0.1.17",
     "vue": "^2.5.17",
-    "vue-cute-timeline": "^1.2.5",
+    "vue-light-timeline": "^1.0.1",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },

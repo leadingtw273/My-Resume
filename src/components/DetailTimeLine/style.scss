@@ -1,3 +1,53 @@
-.DetailTimeLine{
-  
+@import '@/assets/stylesheets/all.scss';
+
+.DetailTimeLine {
+  width: 200px;
+  margin-top: 20px;
+  line-height: 24px;
+
+  > .title {
+    color: $primary;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px dashed $primary;
+  }
+
+  .timeline-tag {
+    display: flex;
+    align-items: center;
+
+    > * {
+      display: inline-flex;
+    }
+    > i {
+      color: $primary;
+    }
+    > p {
+      margin-left: 5px;
+
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .timeline-symbol {
+    margin-left: -6px;
+    color: $primary;
+    background-color: rgb(236, 244, 252);
+  }
+
+  .timeline-content {
+    width: 100px;
+    color: black;
+    > .title {
+      color: $primary;
+
+      font-size: 16px;
+      font-weight: bold;
+    }
+    > .content {
+    }
+  }
 }

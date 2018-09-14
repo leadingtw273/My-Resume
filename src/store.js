@@ -8,7 +8,7 @@ export default new Vuex.Store({
     ResumeData: [
       {
         index: 0,
-        title: 'Personal',
+        title: 'PERSONAL',
         type: 'List',
         content: {
           Name: '周昱宏',
@@ -22,7 +22,7 @@ export default new Vuex.Store({
       },
       {
         index: 1,
-        title: 'Contact',
+        title: 'CONTACT',
         type: 'List',
         content: {
           Home: '無',
@@ -34,16 +34,16 @@ export default new Vuex.Store({
       },
       {
         index: 2,
-        title: 'Education',
+        title: 'EDUCATION',
         type: 'List',
         content: {
           Secondary: '高雄高工 (電子科)',
-          University: '樹德科技大學 \n (電腦與通訊系)'
+          University: '樹德科技大學 (電通系)'
         }
       },
       {
         index: 3,
-        title: 'Technology',
+        title: 'TECHNOLOGY',
         type: 'ProgressBarList',
         content: [
           {
@@ -74,7 +74,7 @@ export default new Vuex.Store({
       },
       {
         index: 4,
-        title: 'OnlineProfile',
+        title: 'ONLINE PROFILE',
         type: 'IconList',
         content: [
           {
@@ -89,19 +89,35 @@ export default new Vuex.Store({
       },
       {
         index: 5,
-        title: 'TimeLine',
+        title: 'TIME LINE',
         type: 'TimeLine',
         content: [
           {
-            Year: '',
-            Title: '',
-            Content: ''
+            tag: '2015',
+            title: '開始自學程式',
+            content: 'java, C++, OOP, android'
+          },
+          {
+            tag: '2016',
+            title: '電子電路相關',
+            content: 'Arduino, raspberryPI, esp8266, Xbee'
+          },
+          {
+            tag: '2017',
+            title: '開始接觸網頁',
+            content:
+              'html, css, JavaScript, bootstrap, MVC, php, Apache, node.js, express, RestfulAPI, firebase, DesignPattern'
+          },
+          {
+            tag: '2018',
+            title: '持續進修',
+            content: 'vue, vuex, vue-cli, scss, WebSocket, http協定, 爬蟲'
           }
         ]
       },
       {
         index: 6,
-        title: 'AboutMe',
+        title: 'ABOUT ME',
         type: 'text',
         content:
           '您好~ 我是周昱宏 我只是在測試換行 所以你可以不用看這一段 因為這只是費文罷了 你如果看到最後 那只能說 恭喜你浪費時間看這一段了'

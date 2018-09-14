@@ -2,23 +2,30 @@
   <div class="trim trim-top"></div>
   <div class="content">
     <div class="left-side">
-      <detail-title />
-      <div class="item-list">
 
-        <div class="left-item" v-for="item in stateList">
+      <div class="item-top">
+        <detail-title />
+      </div>
+
+      <div class="item-mid">
+        <div v-for="item in stateList">
           <detail-list v-if="item.type === 'List'" v-bind:detail-data="item" />
           <detail-progress-bar v-if="item.type === 'ProgressBarList'" v-bind:detail-data="item" />
-        </div>
-
-        <div class="right-item">
-          <detail-time-line />
+          <detail-time-line v-if="item.type === 'TimeLine'" v-bind:detail-data="item" />
         </div>
       </div>
+
+      <div class="item-bottom">
+        bottom
+      </div>
+
     </div>
+
     <div class="right-side">
       <detail-info-title v-bind:mobile-phone="MobilePhone" />
       <detail-text v-bind:detail-data="aboutMe" />
     </div>
+
   </div>
   <div class="trim trim-down"></div>
 </div>

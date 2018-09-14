@@ -1,3 +1,28 @@
 <div class="DetailTimeLine">
-    DetailTimeLine
+  <p class="title">{{title}}</p>
+
+  <light-timeline :items='items'>
+
+    <template slot='tag' slot-scope='{ item }'>
+      <div class="timeline-tag">
+        <i class="fas fa-tag"></i>
+        <p>{{item.tag}}</p>
+      </div>
+    </template>
+
+    <template slot='symbol' slot-scope='{ item }'>
+      <div class="timeline-symbol">
+        <i class="far fa-dot-circle"></i>
+      </div>
+    </template>
+
+    <template slot='content' slot-scope='{ item }'>
+      <div class="timeline-content">
+        <p class="title">{{item.title}}</p>
+        <p class="content">{{item.content}}</p>
+      </div>
+    </template>
+
+  </light-timeline>
+
 </div>

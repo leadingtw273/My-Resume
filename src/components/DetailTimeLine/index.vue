@@ -1,6 +1,17 @@
 <script>
 export default {
-  name: 'DetailTimeLine'
+  name: 'DetailTimeLine',
+  data() {
+    return {
+      title: null,
+      items: null
+    };
+  },
+  props: ['detailData'],
+  created() {
+    this.title = this.detailData.title;
+    this.items = this.detailData.content;
+  }
 };
 </script>
 
