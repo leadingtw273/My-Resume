@@ -1,60 +1,81 @@
 @import '@/assets/stylesheets/all.scss';
 
 .DefaultPage {
-  width: 100%;
-  height: 100%;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 1cm auto;
   position: relative;
+
+  font-size: 12px;
+  line-height: 18px;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.582);
 
   .trim {
     width: 100%;
     height: 20px;
+    position: absolute;
+    z-index: 1;
 
     background-color: $primary;
   }
+
   .trim-top {
-    position: absolute;
     top: 0;
   }
+
   .trim-down {
-    position: absolute;
     bottom: 0;
   }
 
+  .side-bg {
+    height: 100%;
+    width: 285px;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    background: $page-bg-dark;
+  }
+
   .content {
-    height: calc(100% - 40px);
+    height: 100%;
     width: 100%;
-    padding: 20px 60px;
-    position: relative;
+    display: inline-flex;
 
     > * {
-      height: 100%;
-      display: inline-block;
-      position: absolute;
-      top: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
-    .left-side {
-      left: 0px;
-      width: 65%;
-      padding: 60px 20px 40px 60px;
+    .page {
+      height: 100%;
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
 
-      background-color: rgb(236, 244, 252);
+      background-color: $page-bg-Light;
 
-      .item-mid {
-        height: 700px;
+      > * {
         width: 100%;
+        position: relative;
+        z-index: 3;
+      }
+      .item-top {
+        height: 20%;
+
+        display: flex;
+        align-items: center;
+      }
+      .item-mid {
+        height: 80%;
         display: inline-flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-content: space-around;
+
+        > .item {
+          width: 200px;
+        }
       }
-    }
-
-    .right-side {
-      right: 0px;
-      width: 35%;
-      padding: 60px 60px 40px 20px;
-
-      background-color: rgb(221, 237, 243);
     }
   }
 }

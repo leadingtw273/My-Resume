@@ -1,6 +1,7 @@
 <script>
 export default {
-  name: 'DetailTitle'
+  name: 'DetailTitle',
+  props: ['phone']
 };
 </script>
 

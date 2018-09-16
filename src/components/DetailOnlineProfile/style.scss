@@ -1,0 +1,31 @@
+@import '@/assets/stylesheets/all.scss';
+
+.DetailOnlineProfile {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 24px;
+
+  .content {
+    padding: 10px 0 10px 0;
+  }
+
+  .item {
+    display: inline-flex;
+    margin-bottom: 10px;
+
+    font-size: 12px;
+
+    > .item-icon {
+      margin-right: 10px;
+    }
+    > .item-text {
+      line-height: 16px;
+      > .name {
+        font-weight: bold;
+      }
+      > .url {
+      }
+    }
+  }
+}

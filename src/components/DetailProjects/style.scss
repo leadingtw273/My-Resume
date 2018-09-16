@@ -1,0 +1,35 @@
+@import '@/assets/stylesheets/all.scss';
+
+.DetailProjects {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 24px;
+
+  .project-tag {
+    .project-title {
+      display: flex;
+      justify-content: space-between;
+
+      > .title-tag {
+        display: inline-flex;
+
+        font-size: 14px;
+        font-weight: bold;
+        color: $primary;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      > .title-time {
+        display: inline-flex;
+      }
+    }
+
+    .title-text {
+      font-size: 12px;
+      line-height: 14px;
+      border-bottom: 1px dashed $primary;
+    }
+  }
+}

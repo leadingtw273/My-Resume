@@ -2,16 +2,8 @@
 
 .DetailProgressBar {
   width: 200px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   line-height: 24px;
-
-  .title {
-    color: $primary;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-bottom: 2px dashed $primary;
-  }
 
   .field {
     display: flex;

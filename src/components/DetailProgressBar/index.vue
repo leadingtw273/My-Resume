@@ -1,5 +1,6 @@
 <script>
 import vueProgressBar from 'svg-progress-bar';
+import UnitTitle from '@/components/UnitTitle';
 
 export default {
   name: 'DetailProgressBar',
@@ -11,7 +12,8 @@ export default {
   },
   props: ['detailData'],
   components: {
-    vueProgressBar
+    vueProgressBar,
+    UnitTitle
   },
   created() {
     this.title = this.detailData.title;

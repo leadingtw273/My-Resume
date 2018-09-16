@@ -2,7 +2,7 @@
 import UnitTitle from '@/components/UnitTitle';
 
 export default {
-  name: 'DetailList',
+  name: 'DetailOnlineProfile',
   data() {
     return {
       title: null,
@@ -12,7 +12,7 @@ export default {
   props: ['detailData'],
   created() {
     this.title = this.detailData.title;
-    this.field = Object.entries(this.detailData.content);
+    this.field = this.detailData.content;
   },
   components: { UnitTitle }
 };

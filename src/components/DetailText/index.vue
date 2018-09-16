@@ -1,4 +1,6 @@
 <script>
+import UnitTitle from '@/components/UnitTitle';
+
 export default {
   name: 'DetailText',
   data() {
@@ -11,7 +13,8 @@ export default {
   created() {
     this.title = this.detailData.title;
     this.text = this.detailData.content;
-  }
+  },
+  components: { UnitTitle }
 };
 </script>
 

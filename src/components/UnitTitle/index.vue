@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: 'DetailInfoTitle',
-  props: ['MobilePhone']
+  name: 'UnitTitle',
+  props: ['title']
 };
 </script>
 

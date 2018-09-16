@@ -1,0 +1,12 @@
+<div class="DetailOnlineProfile">
+  <unit-title v-bind:title="title" />
+  <div class="content">
+    <div class="item" v-for="item in field">
+      <img class="item-icon" v-bind:src="item.icon" width="35px" height="35px">
+      <div class="item-text">
+        <p class="name">{{item.Name}}</p>
+        <p class="url">{{item.Link}}</p>
+      </div>
+    </div>
+  </div>
+</div>
