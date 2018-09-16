@@ -13,6 +13,7 @@ export default {
   computed: {
     autoList() {
       return this.list
+        .slice(0)
         .sort((a, b) => Date.parse(b.lastPush) - Date.parse(a.lastPush))
         .slice(0, 6);
     }
