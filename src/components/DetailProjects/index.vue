@@ -15,7 +15,7 @@ export default {
       return this.list
         .slice(0)
         .sort((a, b) => Date.parse(b.lastPush) - Date.parse(a.lastPush))
-        .slice(0, 6);
+        .slice(0, 8);
     }
   },
   props: ['detailData'],
