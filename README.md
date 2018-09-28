@@ -2,6 +2,8 @@
 
 這是我個人練習的簡歷～
 
+[連結](http://jjylab.dlinkddns.com:8081/#/default)
+
 ---
 
 ### 練習項目:
