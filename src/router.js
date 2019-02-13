@@ -5,6 +5,7 @@ import HomePage from './views/HomePage/index.vue';
 Vue.use(Router);
 
 export default new Router({
+  base: '/leadingtw/',
   routes: [
     {
       path: '/',
