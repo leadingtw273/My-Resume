@@ -6,6 +6,7 @@ Vue.use(Router);
 
 export default new Router({
   base: '/leadingtw/',
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -18,8 +19,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/DefaultPage/index.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/DefaultPage/index.vue')
     },
     {
       path: '/another',
@@ -27,8 +27,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/AnotherPage/index.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/AnotherPage/index.vue')
     }
   ]
 });
